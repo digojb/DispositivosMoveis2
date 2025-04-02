@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Somatório das Dívidas"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="185dp"
+        android:background="#BAC3F8"
+        android:padding="18dp">
+
+        <TableRow
+            android:paddingBottom="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor das dívidas:"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23sp"
+                android:paddingStart="10dp"
+                android:id="@+id/valor"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quant. de dívidas:"
+                android:textSize="23sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23sp"
+                android:paddingStart="10dp"
+                android:id="@+id/qtd"/>
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TableRow
+            android:layout_margin="30dp">
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Inserir Dívidas"
+                android:layout_marginRight="10dp"
+                android:id="@+id/btnInserir"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Calcular Total"
+                android:id="@+id/btnCalcular"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
